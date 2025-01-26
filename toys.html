@@ -11,30 +11,30 @@
 <body>
     <div class="Container">
         <header class="py-3">
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="pictures/logo.png" alt="logo" class="logo img-fluid">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <nav class="navbar navbar-expand-lg justify-content-center">
+                <div class="container-fluid position-static">
+                    <button class="navbar-toggler position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ms-auto">
-                            <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT US</a></li>
-                            <li class="nav-item"><a class="nav-link" href="cart.html">CART</a></li>
+                    <div class="collapse navbar-collapse justify-content-center position-static" id="navbarNav">
+                        <ul class="navbar-nav text-center">
+                            <li class="nav-item"><a class="nav-link fs-5" href="index.html">HOME</a></li>
+                            <li class="nav-item"><a class="nav-link fs-5" href="contact.html">CONTACT US</a></li>
+                            <li class="nav-item"><a class="nav-link fs-5" href="cart.html">CART</a></li>
                         </ul>
                     </div>
                 </div>
             </nav>
+            <h1 class="logo text-end position-relative">
+                <img src="pictures/logo.png" alt="logo" class="img-fluid" style="max-width: 300px; width: 100%;">
+            </h1>
         </header>
 
         <div class="container-fluid py-5">
             <div class="row">
                 <!-- Filters Sidebar -->
                 <div class="col-lg-3 mb-4">
-                    <div class="card">
+                    <div class="card filter-card">
                         <div class="card-body">
                             <h5 class="card-title">Filter</h5>
                             <div class="mb-4">
@@ -62,147 +62,161 @@
 
                 <!-- Products Grid -->
                 <div class="col-lg-9">
-                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-                        <!-- Product Card 1 -->
-                        <div class="col">
-                            <div class="card h-100 product-card">
-                                <img src="pictures/snorlax-burger.jpg" class="card-img-top" alt="Hamburger Snorlax">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title">Hamburger Snorlax</h5>
-                                    <p class="card-text price">$109</p>
-                                    <button class="btn btn-primary">Add to Cart</button>
+                    <div class="products-grid">
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                            <!-- Product Card 1 -->
+                            <div class="col">
+                                <div class="card h-100 product-card">
+                                    <span class="product-category">Plush</span>
+                                    <img src="pictures/snorlax-burger.jpg" class="card-img-top" alt="Hamburger Snorlax">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Hamburger Snorlax</h5>
+                                        <p class="card-text price">$109</p>
+                                        <button class="btn btn-primary">Add to Cart</button>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <!-- Product Card 2 -->
-                        <div class="col">
-                            <div class="card h-100 product-card">
-                                <img src="pictures/pikachu-cos-mario.jpg" class="card-img-top" alt="Pikachu Plush">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title">Pikachu Cos Mario</h5>
-                                    <p class="card-text price">$89</p>
-                                    <button class="btn btn-primary">Add to Cart</button>
+                            <!-- Product Card 2 -->
+                            <div class="col">
+                                <div class="card h-100 product-card">
+                                    <span class="product-category">Plush</span>
+                                    <img src="pictures/pikachu-cos-mario.jpg" class="card-img-top" alt="Pikachu Plush">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Pikachu Cos Mario</h5>
+                                        <p class="card-text price">$89</p>
+                                        <button class="btn btn-primary">Add to Cart</button>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <!-- Product Card 3 -->
-                        <div class="col">
-                            <div class="card h-100 product-card">
-                                <img src="pictures/charizard-family.jpg" class="card-img-top" alt="Charizard Figure">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title">Charizard Family</h5>
-                                    <p class="card-text price">$149</p>
-                                    <button class="btn btn-primary">Add to Cart</button>
+                            <!-- Product Card 3 -->
+                            <div class="col">
+                                <div class="card h-100 product-card">
+                                    <span class="product-category">Plush</span>
+                                    <img src="pictures/charizard-family.jpg" class="card-img-top" alt="Charizard Figure">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Charizard Family</h5>
+                                        <p class="card-text price">$149</p>
+                                        <button class="btn btn-primary">Add to Cart</button>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <!-- Product Card 4 -->
-                        <div class="col">
-                            <div class="card h-100 product-card">
-                                <img src="pictures/eevee.jpg" class="card-img-top" alt="Eevee Plush">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title">Eevee</h5>
-                                    <p class="card-text price">$79</p>
-                                    <button class="btn btn-primary">Add to Cart</button>
+                            <!-- Product Card 4 -->
+                            <div class="col">
+                                <div class="card h-100 product-card">
+                                    <span class="product-category">Plush</span>
+                                    <img src="pictures/eevee.jpg" class="card-img-top" alt="Eevee Plush">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Eevee</h5>
+                                        <p class="card-text price">$79</p>
+                                        <button class="btn btn-primary">Add to Cart</button>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <!-- Product Card 5 -->
-                        <div class="col">
-                            <div class="card h-100 product-card">
-                                <img src="pictures/mewtwo.jpg" class="card-img-top" alt="Mewtwo Statue">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title">Mewtwo</h5>
-                                    <p class="card-text price">$299</p>
-                                    <button class="btn btn-primary">Add to Cart</button>
+                            <!-- Product Card 5 -->
+                            <div class="col">
+                                <div class="card h-100 product-card">
+                                    <span class="product-category">Plush</span>
+                                    <img src="pictures/mewtwo.jpg" class="card-img-top" alt="Mewtwo Statue">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Mewtwo</h5>
+                                        <p class="card-text price">$299</p>
+                                        <button class="btn btn-primary">Add to Cart</button>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <!-- Product Card 6 -->
-                        <div class="col">
-                            <div class="card h-100 product-card">
-                                <img src="pictures/gengar.jpg" class="card-img-top" alt="Gengar Plush">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title">Gengar</h5>
-                                    <p class="card-text price">$95</p>
-                                    <button class="btn btn-primary">Add to Cart</button>
+                            <!-- Product Card 6 -->
+                            <div class="col">
+                                <div class="card h-100 product-card">
+                                    <span class="product-category">Plush</span>
+                                    <img src="pictures/gengar.jpg" class="card-img-top" alt="Gengar Plush">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Gengar</h5>
+                                        <p class="card-text price">$95</p>
+                                        <button class="btn btn-primary">Add to Cart</button>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <!-- Product Card 7 -->
-                        <div class="col">
-                            <div class="card h-100 product-card">
-                                <img src="pictures/bulbasaur-family.jpg" class="card-img-top" alt="Bulbasaur Figure">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title">Bulbasaur Family</h5>
-                                    <p class="card-text price">$69</p>
-                                    <button class="btn btn-primary">Add to Cart</button>
+                            <!-- Product Card 7 -->
+                            <div class="col">
+                                <div class="card h-100 product-card">
+                                    <span class="product-category">Plush</span>
+                                    <img src="pictures/bulbasaur-family.jpg" class="card-img-top" alt="Bulbasaur Figure">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Bulbasaur Family</h5>
+                                        <p class="card-text price">$69</p>
+                                        <button class="btn btn-primary">Add to Cart</button>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <!-- Product Card 8 -->
-                        <div class="col">
-                            <div class="card h-100 product-card">
-                                <img src="pictures/squirtle.jpg" class="card-img-top" alt="Mew Plush">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title">Squirtle</h5>
-                                    <p class="card-text price">$85</p>
-                                    <button class="btn btn-primary">Add to Cart</button>
+                            <!-- Product Card 8 -->
+                            <div class="col">
+                                <div class="card h-100 product-card">
+                                    <span class="product-category">Plush</span>
+                                    <img src="pictures/squirtle.jpg" class="card-img-top" alt="Mew Plush">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Squirtle</h5>
+                                        <p class="card-text price">$85</p>
+                                        <button class="btn btn-primary">Add to Cart</button>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <!-- Product Card 9 -->
-                        <div class="col">
-                            <div class="card h-100 product-card">
-                                <img src="pictures/Gyarados.jpg" class="card-img-top" alt="Gyarados Figure">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title">Gyarados</h5>
-                                    <p class="card-text price">$199</p>
-                                    <button class="btn btn-primary">Add to Cart</button>
+                            <!-- Product Card 9 -->
+                            <div class="col">
+                                <div class="card h-100 product-card">
+                                    <span class="product-category">Plush</span>
+                                    <img src="pictures/Gyarados.jpg" class="card-img-top" alt="Gyarados Figure">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Gyarados</h5>
+                                        <p class="card-text price">$199</p>
+                                        <button class="btn btn-primary">Add to Cart</button>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <!-- Product Card 10 -->
-                        <div class="col">
-                            <div class="card h-100 product-card">
-                                <img src="pictures/Dragonite.jpg" class="card-img-top" alt="Dragonite Plush">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title">Dragonite</h5>
-                                    <p class="card-text price">$99</p>
-                                    <button class="btn btn-primary">Add to Cart</button>
+                            <!-- Product Card 10 -->
+                            <div class="col">
+                                <div class="card h-100 product-card">
+                                    <span class="product-category">Plush</span>
+                                    <img src="pictures/Dragonite.jpg" class="card-img-top" alt="Dragonite Plush">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Dragonite</h5>
+                                        <p class="card-text price">$99</p>
+                                        <button class="btn btn-primary">Add to Cart</button>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <!-- Product Card 11 -->
-                        <div class="col">
-                            <div class="card h-100 product-card">
-                                <img src="pictures/Rayquaza .jpg" class="card-img-top" alt="Rayquaza Figure">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title">Rayquaza</h5>
-                                    <p class="card-text price">$249</p>
-                                    <button class="btn btn-primary">Add to Cart</button>
+                            <!-- Product Card 11 -->
+                            <div class="col">
+                                <div class="card h-100 product-card">
+                                    <span class="product-category">Plush</span>
+                                    <img src="pictures/Rayquaza .jpg" class="card-img-top" alt="Rayquaza Figure">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Rayquaza</h5>
+                                        <p class="card-text price">$249</p>
+                                        <button class="btn btn-primary">Add to Cart</button>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <!-- Product Card 12 -->
-                        <div class="col">
-                            <div class="card h-100 product-card">
-                                <img src="pictures/Mimikyu.jpg" class="card-img-top" alt="Mimikyu Plush">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title">Mimikyu</h5>
-                                    <p class="card-text price">$89</p>
-                                    <button class="btn btn-primary">Add to Cart</button>
+                            <!-- Product Card 12 -->
+                            <div class="col">
+                                <div class="card h-100 product-card">
+                                    <span class="product-category">Plush</span>
+                                    <img src="pictures/Mimikyu.jpg" class="card-img-top" alt="Mimikyu Plush">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Mimikyu</h5>
+                                        <p class="card-text price">$89</p>
+                                        <button class="btn btn-primary">Add to Cart</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>

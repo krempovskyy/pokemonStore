@@ -53,8 +53,12 @@ article img{
     transform: scale(1.075);
 }
 
-.logo{
-    text-align: end;
+.logo {
+    z-index: 1030;
+}
+
+.logo img {
+    max-width: 300px; /* adjust this value to match your desired logo size */
 }
 
 footer{
@@ -68,36 +72,154 @@ footer{
 
 /* Toys page specific styles */
 .product-card {
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
     border: none;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+    height: 100%;  /* Ensure consistent card heights */
 }
 
 .product-card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(136, 96, 208, 0.2);  /* Purple-tinted shadow */
+}
+
+.product-card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .product-card img {
     width: 100%;
-    height: 250px;
-    object-fit: cover;
+    height: 280px;  /* Increased base height */
+    object-fit: contain;
     padding: 1rem;
+    background-color: #f8f9fa;  /* Light background for product images */
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover img {
+    transform: scale(1.05);
 }
 
 .price {
     color: #8860d0;
-    font-size: 1.25rem;
+    font-size: 1.4rem;
     font-weight: bold;
+    margin: 1rem 0;
 }
 
 .btn-primary {
     background-color: #8860d0;
-    border-color: #8860d0;
+    border: none;
+    border-radius: 25px;
+    padding: 0.6rem 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
 }
 
 .btn-primary:hover {
     background-color: #6b4ca6;
     border-color: #6b4ca6;
+}
+
+/* Responsive styles reorganized and optimized */
+@media (max-width: 1400px) {
+    .product-card img {
+        height: 250px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .product-card img {
+        height: 220px;
+    }
+    
+    .navbar-nav {
+        gap: 1rem;  /* Add spacing between nav items */
+    }
+}
+
+@media (max-width: 991px) {
+    .product-card img {
+        height: 200px;
+    }
+    
+    /* Improved filter sidebar for tablets */
+    .card {
+        position: static;
+        margin-bottom: 2rem;
+    }
+    
+    .logo img {
+        max-width: 250px;
+    }
+    
+    /* Adjust grid columns for better tablet layout */
+    .row-cols-md-2 > * {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .product-card {
+        margin-bottom: 1rem;
+    }
+    
+    .product-card img {
+        height: 180px;
+    }
+    
+    .card-title {
+        font-size: 1.1rem;
+    }
+    
+    .price {
+        font-size: 1.1rem;
+    }
+    
+    .btn-primary {
+        padding: 0.4rem 1rem;
+        font-size: 0.9rem;
+    }
+    
+    /* Improved mobile navigation */
+    .navbar-nav {
+        gap: 0.5rem;
+    }
+    
+    .nav-link {
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .product-card img {
+        height: 160px;
+    }
+    
+    .logo img {
+        max-width: 180px;
+    }
+    
+    /* Single column layout for mobile */
+    .row-cols-1 > * {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    
+    /* Adjust filter sidebar for mobile */
+    .col-lg-3 {
+        padding: 0 1rem;
+    }
+    
+    .card-body {
+        padding: 1rem;
+    }
 }
 
 /* Make the filter sidebar sticky on larger screens */
@@ -127,4 +249,56 @@ footer{
     nav {
         font-size: 20px;
     }
+}
+
+.products-grid {
+    padding: 2rem 0;
+}
+
+.products-grid .row {
+    margin: -12px;  /* Negative margin for tighter grid */
+}
+
+.products-grid .col {
+    padding: 12px;  /* Consistent padding for grid items */
+}
+
+.filter-card {
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.filter-card .card-title {
+    color: #8860d0;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 0.5rem;
+}
+
+.form-check-input:checked {
+    background-color: #8860d0;
+    border-color: #8860d0;
+}
+
+.price-range-label {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.card-title {
+    font-family: 'Luckiest Guy', cursive;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+/* Add a small badge for categories */
+.product-category {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: rgba(136, 96, 208, 0.9);
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
 }

@@ -65,3 +65,66 @@ footer{
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
+/* Toys page specific styles */
+.product-card {
+    transition: transform 0.3s ease;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    padding: 1rem;
+}
+
+.price {
+    color: #8860d0;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #8860d0;
+    border-color: #8860d0;
+}
+
+.btn-primary:hover {
+    background-color: #6b4ca6;
+    border-color: #6b4ca6;
+}
+
+/* Make the filter sidebar sticky on larger screens */
+@media (min-width: 992px) {
+    .card {
+        position: sticky;
+        top: 20px;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    nav li {
+        margin: 20px;
+    }
+    
+    nav {
+        padding-top: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav li {
+        margin: 10px;
+    }
+    
+    nav {
+        font-size: 20px;
+    }
+}

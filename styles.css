@@ -75,13 +75,12 @@ footer{
     transition: all 0.3s ease;
     border: none;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 1.5rem;
-    height: 100%;  /* Ensure consistent card heights */
+    margin-top: 0.5rem; 
 }
 
 .product-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 15px rgba(136, 96, 208, 0.2);  /* Purple-tinted shadow */
+    box-shadow: 0 8px 15px rgba(136, 96, 208, 0.2);
 }
 
 .product-card .card-body {
@@ -92,10 +91,10 @@ footer{
 
 .product-card img {
     width: 100%;
-    height: 280px;  /* Increased base height */
+    height: 280px; 
     object-fit: contain;
     padding: 1rem;
-    background-color: #f8f9fa;  /* Light background for product images */
+    background-color: #f8f9fa;
     transition: transform 0.3s ease;
 }
 
@@ -139,7 +138,7 @@ footer{
     }
     
     .navbar-nav {
-        gap: 1rem;  /* Add spacing between nav items */
+        gap: 1rem; 
     }
 }
 
@@ -162,6 +161,14 @@ footer{
     .row-cols-md-2 > * {
         flex: 0 0 50%;
         max-width: 50%;
+    }
+    
+    .products-grid {
+        margin-top: 0; 
+    }
+    
+    .filter-card {
+        margin-bottom: 2rem;
     }
 }
 
@@ -252,18 +259,19 @@ footer{
 }
 
 .products-grid {
-    padding: 2rem 0;
+    margin-top: 1.5rem; 
 }
 
 .products-grid .row {
-    margin: -12px;  /* Negative margin for tighter grid */
+    margin: -12px; 
 }
 
 .products-grid .col {
-    padding: 12px;  /* Consistent padding for grid items */
+    padding: 12px;
 }
 
 .filter-card {
+    margin-top: 2rem; 
     border-radius: 15px;
     border: none;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -301,4 +309,58 @@ footer{
     padding: 0.3rem 0.8rem;
     border-radius: 20px;
     font-size: 0.8rem;
+}
+
+/* Reset container padding */
+.container-fluid.py-5 {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+/* Adjust row spacing */
+.row {
+    margin-top: 0;
+    padding-top: 2rem;
+}
+
+/* Products grid adjustments */
+.products-grid {
+    margin-top: -0.5rem;
+}
+
+.row.row-cols-1.row-cols-md-2.row-cols-lg-3.g-4 {
+    margin: 0;
+    padding: 0;
+}
+
+/* Filter card adjustments */
+.col-lg-3.mb-4 {
+    padding-top: 2rem;
+}
+
+.filter-card {
+    margin: 0;
+}
+
+/* Product card adjustments */
+.col {
+    padding: 12px;
+}
+
+.product-card {
+    margin: 0;
+}
+
+@media (max-width: 991px) {
+    .col-lg-3.mb-4 {
+        padding-top: 0;
+    }
+    
+    .filter-card {
+        margin-bottom: 2rem;
+    }
+    
+    .products-grid {
+        margin-top: 0; 
+    }
 }

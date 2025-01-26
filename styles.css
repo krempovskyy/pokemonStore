@@ -364,3 +364,34 @@ footer{
         margin-top: 0; 
     }
 }
+
+/* Toys page specific footer styles */
+.Container > footer {
+    margin-top: 2rem;
+    background-color: #c1c8e4;
+    padding: 2rem 0;
+    width: 100%;
+}
+
+.Container > footer h5 {
+    font-family: 'Luckiest Guy', cursive;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.Container > footer p {
+    margin-bottom: 0.5rem;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Ensure the footer stays at the bottom */
+.Container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-fluid.py-5 {
+    flex: 1;
+}

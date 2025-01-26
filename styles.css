@@ -1,0 +1,67 @@
+nav li{
+    display: inline;
+    margin: 80px;
+}
+
+nav{
+    font-size: 25px;
+    text-transform: uppercase;
+    padding-top: 100px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #000000;
+}
+
+nav a:hover{
+    color: #8860d0;
+}
+
+
+header {
+    color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px;
+}
+
+
+
+article img{
+    width: 600px;
+    height: auto;
+}
+
+.Choice{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.Container{
+    font-family: 'Luckiest Guy', cursive;
+}
+
+.Clothes:hover{
+    transform: scale(1.075);
+}
+
+.Toys:hover{
+    transform: scale(1.075);
+}
+
+.logo{
+    text-align: end;
+}
+
+footer{
+    text-align: center;
+    font-size: 15px;
+    color: #000000;
+    background-color: #c1c8e4;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

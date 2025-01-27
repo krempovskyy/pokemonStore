@@ -395,3 +395,35 @@ footer{
 .container-fluid.py-5 {
     flex: 1;
 }
+
+/* Specify cloths page */
+.flickering-button {
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    background-color:#8860d0;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    animation: flicker 0.5s infinite; /* Apply the flicker animation */
+}
+
+/* Flicker animation definition */
+@keyframes flicker {
+    0% { opacity: 0.9; }
+    100% { opacity: 05; }
+}
+
+/* Optional: Change color on hover */
+.flickering-button:hover {
+    background-color:blueviolet;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.footer div {
+    width: 30%;
+}

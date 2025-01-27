@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing & Accessories</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="Container">
+        <header class="py-3">
+            <nav class="navbar navbar-expand-lg justify-content-center">
+                <div class="container-fluid position-static">
+                    <button class="navbar-toggler position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center position-static" id="navbarNav">
+                        <ul class="navbar-nav text-center">
+                            <li class="nav-item"><a class="nav-link fs-5" href="index.html">HOME</a></li>
+                            <li class="nav-item"><a class="nav-link fs-5" href="contact.html">CONTACT US</a></li>
+                            <li class="nav-item"><a class="nav-link fs-5" href="cart.html">CART</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <h1 class="logo text-end position-relative">
+                <img src="pictures/logo.png" alt="logo" class="img-fluid" style="max-width: 300px; width: 100%;">
+            </h1>
+        </header>
+
+        <div class="container-fluid py-5">
+            <div class="row">
+                <!-- Filters Sidebar -->
+                <div class="col-lg-3 mb-4">
+                    <div class="card filter-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Filter</h5>
+                            <div class="mb-4">
+                                <h6>Clothing & Accessories</h6>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="type">
+                                    <label class="form-check-label" for="type">Cloths</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="type">
+                                    <label class="form-check-label" for="type">Accessories</label>
+                                </div>
+
+                                <h6>Gender</h6>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="type">
+                                    <label class="form-check-label" for="type">Men & unisex</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="type">
+                                    <label class="form-check-label" for="type">Women & Unisex</label>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h6>Price Range</h6>
+                                <input type="range" class="form-range" min="0" max="300" id="priceRange">
+                                <div class="d-flex justify-content-between">
+                                    <span>$0</span>
+                                    <span>$300</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Products Grid -->
+                <div class="col-lg-9">
+                    <div class="products-grid">
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                            <!-- Product Card 1 -->
+                            <div class="col">
+                                <div class="card h-100 product-card">
+                                    <span class="product-category">Women</span>
+                                    <img src="pictures/CROP TOP.png" class="card-img-top" alt="women">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Crop top</h5>
+                                        <p class="card-text price">$26.99</p>
+                                        <button class="btn btn-primar">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ProductCard 2 -->
+                            <div class="col">
+                                <div class="card h-100 product-card">
+                                    <span class="product-category">Women</span>
+                                    <img src="pictures/TANK TOP.png" class="card-img-top" alt="women">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">TANK TOP</h5>
+                                        <p class="card-text price">$29.99</p>
+                                        <button class="btn btn-primary">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Product Card 3 -->
+                            <div class="col">
+                                <div class="card h-100 product-card">
+                                    <span class="product-category">Women</span>
+                                    <img src="pictures/HOODIE WOMAN.png" class="card-img-top" alt="women">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">HODDIE</h5>
+                                        <p class="card-text price">$49.99</p>
+                                        <button class="btn btn-primary">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Product Card 4 -->
+                            <div class="col">
+                                <div class="card h-100 product-card">
+                                    <span class="product-category">Men</span>
+                                    <img src="pictures/JACKET MAN.png" class="card-img-top" alt="men">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">JACKET</h5>
+                                        <p class="card-text price">$39.99</p>
+                                        <button class="btn btn-primary">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Product Card 5 -->
+                            <div class="col">
+                                <div class="card h-100 product-card">
+                                    <span class="product-category">Men</span>
+                                    <img src="pictures/HOODIE MAN.png" class="card-img-top" alt="men">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">HOODIE</h5>
+                                        <p class="card-text price">$49.99</p>
+                                        <button class="btn btn-primary">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Product Card 6 -->
+                            <div class="col">
+                                <div class="card h-100 product-card">
+                                    <span class="product-category">Man</span>
+                                    <img src="pictures/SWEATER MAN.png" class="card-img-top" alt="men">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">SWEATER</h5>
+                                        <p class="card-text price">$59.99</p>
+                                        <button class="btn btn-primary">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Product Card 7 -->
+                            <div class="col">
+                                <div class="card h-100 product-card">
+                                    <span class="product-category">Unisex</span>
+                                    <img src="pictures/UNI HAT.png" class="card-img-top" alt="unisex">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">HAT</h5>
+                                        <p class="card-text price">$19.99</p>
+                                        <button class="btn btn-primary">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Product Card 8 -->
+                            <div class="col">
+                                <div class="card h-100 product-card">
+                                    <span class="product-category">Unisex</span>
+                                    <img src="pictures/T SHIRT MEN.png" class="card-img-top" alt="active T shirt">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">T_SHIRT</h5>
+                                        <p class="card-text price">$19.99</p>
+                                        <button class="btn btn-primary">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Product Card 9 -->
+                            <div class="col">
+                                <div class="card h-100 product-card">
+                                    <span class="product-category">Unisex</span>
+                                    <img src="pictures/GLOVES UNI.png" class="card-img-top" alt="gloves">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">GLOVES</h5>
+                                        <p class="card-text price">$9.99</p>
+                                        <button class="btn btn-primary">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Product Card 10 -->
+                            <div class="col">
+                                <div class="card h-100 product-card">
+                                    <span class="product-category">Accessories</span>
+                                    <img src="pictures/TOTE.png" class="card-img-top" alt="tote">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">MULTI PURPOSES TOTE</h5>
+                                        <p class="card-text price">$29.99</p>
+                                        <button class="btn btn-primary">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Product Card 11 -->
+                            <div class="col">
+                                <div class="card h-100 product-card">
+                                    <span class="product-category">Accessories</span>
+                                    <img src="pictures/CASE EARBUDS.png" class="card-img-top" alt="EARBUDS CASE">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">EARBUDS CASE</h5>
+                                        <p class="card-text price">$19.99</p>
+                                        <button class="btn btn-primary">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Product Card 12 -->
+                            <div class="col">
+                                <div class="card h-100 product-card">
+                                    <span class="product-category">Accessories</span>
+                                    <img src="pictures/SHOCK CASE.png" class="card-img-top" alt="PHONE SHOCK CASE">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">IP SHOCK CASE</h5>
+                                        <p class="card-text price">$19.99</p>
+                                        <button class="btn btn-primary">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="py-4">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-12">
+                        <h5 class="mb-3">Pokemon Store DAO</h5>
+                        <p class="mb-2">+358 999 99 99</p>
+                        <p class="mb-2">info@pokestore.lol</p>
+                        <p class="mb-0">11111, Hämeenlinna</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

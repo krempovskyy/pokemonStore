@@ -1,0 +1,183 @@
+body {
+    font-family: 'Luckiest Guy', cursive;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(51, 160, 160);
+
+}
+body a:hover{
+    color: #8860d0;
+}
+
+header{
+    background-color: white;
+    color: black;
+    padding: 20px 0;
+    font-family: 'Luckiest Guy', cursive;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .nav-item a{
+    color: black;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 25px;
+}
+
+header .nav-item a:visited{
+    color:rgb(83, 154, 121)
+}
+
+header .nav-item a:hover{
+    color:rgb(172, 180, 9);
+}
+
+header .logo img{
+    max-width: 200px;
+}
+
+h2.custom-heading{
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.contact-section {
+    padding: 30px;
+    max-width: 1500px;
+    margin: auto;
+    background-color: rgb(139, 210, 234);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+.contact-info{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact-info img.contact-image {
+    max-width: 150px;
+    border-radius:10px
+}
+.contact-form{
+    margin-top: 30px;
+}
+.contact-form .form-group {
+    margin-bottom: 15px;
+}
+.contact-form button{
+    margin-top: 10px;
+}
+.contact-form button:hover{
+    background-color: rgb(172, 180, 9);
+}
+h3.custom-heading{
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 25px;
+    font-weight: normal;
+}.social-links{
+    font-size: 20px;
+    margin: 25px;
+}
+.social-links ul{
+    list-style: none;
+    padding: 0;
+}
+.social-links ul li{
+    display: inline;
+    margin: 0 10px;
+    }
+.social-links ul li a{
+    text-decoration:underline;
+    color:black;
+    font-weight: bold;
+}
+.social-links .nav-item1 a:hover{
+    color: rgb(172, 180, 9);
+}
+footer{
+    text-align: center;
+    font-size: 15px;
+    color: #000000;
+    background-color: #c1c8e4;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+footer p{
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Media Query for Mobile devices*/
+@media (max-width: 768px){
+    header {
+        padding :15px
+            }
+    header .logo img{
+        max-width: 180px;
+             }
+    header .nav-item a {
+        font-size: 20px;
+         }
+    .contact-section{
+        padding: 20px;
+        }
+    .contact-info{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-info img.contact-image{
+        max-width: 120px;
+        margin-bottom: 16px;
+    }
+    .contact-form button {
+        padding: 10px;
+        font-size: 14px;
+    }
+    .social-links ul li{
+        display :block;
+        margin:5px 0;
+    }
+    footer{
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+/*mobile devices upto 480px*/
+@media (max-width: 480px){
+    header {
+        padding :15px
+            }
+    header .logo img{
+        max-width: 150px;
+             }
+    header .nav-item a {
+        font-size: 18px;
+         }
+    .contact-section{
+        padding: 15px;
+        }
+    .contact-info{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-info img.contact-image{
+        max-width: 100px;
+        margin-bottom: 15px;
+    }
+    .contact-form button {
+        padding: 10px;
+        font-size: 14px;
+    }
+    .social-links ul li{
+        display :block;
+        margin:5px 0;
+    }
+    footer{
+        font-size: 12px;
+        padding: 5px;
+    }
+}

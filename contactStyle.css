@@ -1,3 +1,5 @@
+/*General body styling*/
+
 body {
     font-family: 'Luckiest Guy', cursive;
     margin: 0;
@@ -5,10 +7,12 @@ body {
     background-color: rgb(51, 160, 160);
 
 }
+/*hover effect for all links inside the body*/
 body a:hover{
     color: #8860d0;
 }
 
+/*Header styling*/
 header{
     background-color: white;
     color: black;
@@ -18,32 +22,33 @@ header{
     justify-content: space-between;
     align-items: center;
 }
-
+/*Navigation item links inside the header*/
 header .nav-item a{
     color: black;
     text-decoration: none;
     font-weight: normal;
     font-size: 25px;
 }
-
+/*Visited link styling in the navigation*/
 header .nav-item a:visited{
     color:rgb(83, 154, 121)
 }
-
+/*Hover effect for navigation links*/
 header .nav-item a:hover{
     color:rgb(172, 180, 9);
 }
-
+/*Logo inside the header*/
 header .logo img{
     max-width: 200px;
 }
-
+/*Custom heading style for heading2*/
 h2.custom-heading{
     font-family: 'Luckiest Guy', cursive;
     font-size: 25px;
     font-weight: normal;
 }
 
+/*Contact section styling*/
 .contact-section {
     padding: 30px;
     max-width: 1500px;
@@ -51,64 +56,76 @@ h2.custom-heading{
     background-color: rgb(139, 210, 234);
     box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
 }
+/*Contact info layout*/
 .contact-info{
+    font-family: 'Luckiest Guy', cursive;
     display: flex;
     align-items: center;
     gap: 20px;
+    font-weight:lighter;
 }
-
+/*Styling for images inside the conatct info */
 .contact-info img.contact-image {
     max-width: 150px;
     border-radius:10px
 }
+/*Contact form styling*/
 .contact-form{
     margin-top: 30px;
 }
+/*Individual form group styling*/
 .contact-form .form-group {
     margin-bottom: 15px;
 }
+/*Button styling in the contact form*/
 .contact-form button{
     margin-top: 10px;
 }
+/*Hover effect for button*/
 .contact-form button:hover{
     background-color: rgb(172, 180, 9);
 }
+/*Custom heading styling for heading3*/
 h3.custom-heading{
     font-family: 'Luckiest Guy', cursive;
     font-size: 25px;
     font-weight: normal;
-}.social-links{
+}
+/*Social link section styling*/
+.social-links{
+    font-family: 'Luckiest Guy', cursive;
     font-size: 20px;
     margin: 25px;
+    font-weight:lighter;
+
 }
-.social-links ul{
-    list-style: none;
-    padding: 0;
-}
+
+/*Individual list items in social links*/
 .social-links ul li{
     display: inline;
     margin: 0 10px;
     }
+/*Styling links inside social links*/
 .social-links ul li a{
     text-decoration:underline;
     color:black;
-    font-weight: bold;
 }
+/*hover effect for links inside social links*/
 .social-links .nav-item1 a:hover{
     color: rgb(172, 180, 9);
 }
+/*Footer styling*/
 footer{
+    font-family: 'Luckiest Guy', cursive;
     text-align: center;
     font-size: 15px;
     color: #000000;
     background-color: #c1c8e4;
     padding-top: 10px;
     padding-bottom: 10px;
+    font-weight: lighter;
 }
-footer p{
-    margin: 0;
-    font-size: 14px;
-}
+
 
 /* Media Query for Mobile devices*/
 @media (max-width: 768px){
@@ -140,7 +157,8 @@ footer p{
         display :block;
         margin:5px 0;
     }
-    footer{
+    .footer{
+        font-family: 'Luckiest Guy', cursive;
         font-size: 14px;
         padding: 8px;
     }

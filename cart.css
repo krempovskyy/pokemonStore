@@ -1,0 +1,114 @@
+/*General body styling*/
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Luckiest Guy', cursive;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(51, 160, 160);
+
+}
+/*hover effect for all links inside the body*/
+body a:hover{
+    color: #8860d0;
+}
+
+/*Header styling*/
+header{
+    background-color: white;
+    color: black;
+    padding: 20px 0;
+    font-family: 'Luckiest Guy', cursive;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*Navigation item links inside the header*/
+header .nav-item a{
+    color: black;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 25px;
+}
+/*Visited link styling in the navigation*/
+header .nav-item a:visited{
+    color:rgb(83, 154, 121)
+}
+/*Hover effect for navigation links*/
+header .nav-item a:hover{
+    color:#8860d0;
+}
+/*Logo inside the header*/
+header .logo img{
+    max-width: 200px;
+}
+
+main{
+    flex: 1;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+}
+/*Custom heading style for heading2*/
+h2.custom-heading{
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 25px;
+    font-weight: normal;
+}
+
+
+
+
+
+/*Footer styling*/
+footer{
+    font-family: 'Luckiest Guy', cursive;
+    text-align: center;
+    font-size: 15px;
+    color: #000000;
+    background-color: #c1c8e4;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: lighter;
+}
+
+
+/* Media Query for Mobile devices*/
+@media (max-width: 768px){
+    header {
+        padding :15px
+            }
+    header .logo img{
+        max-width: 180px;
+             }
+    header .nav-item a {
+        font-size: 20px;
+         }
+
+    .footer{
+        font-family: 'Luckiest Guy', cursive;
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+/*mobile devices upto 480px*/
+@media (max-width: 480px){
+    header {
+        padding :15px
+            }
+    header .logo img{
+        max-width: 150px;
+             }
+    header .nav-item a {
+        font-size: 18px;
+         }
+
+    footer{
+        font-size: 12px;
+        padding: 5px;
+    }
+}

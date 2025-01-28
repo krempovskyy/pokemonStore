@@ -35,7 +35,7 @@ header .nav-item a:visited{
 }
 /*Hover effect for navigation links*/
 header .nav-item a:hover{
-    color:rgb(172, 180, 9);
+    color:#8860d0;
 }
 /*Logo inside the header*/
 header .logo img{
@@ -83,7 +83,7 @@ h2.custom-heading{
 }
 /*Hover effect for button*/
 .contact-form button:hover{
-    background-color: rgb(172, 180, 9);
+    background-color: #8860d0;
 }
 /*Custom heading styling for heading3*/
 h3.custom-heading{
@@ -112,7 +112,7 @@ h3.custom-heading{
 }
 /*hover effect for links inside social links*/
 .social-links .nav-item1 a:hover{
-    color: rgb(172, 180, 9);
+    color: #8860d0;
 }
 /*Footer styling*/
 footer{

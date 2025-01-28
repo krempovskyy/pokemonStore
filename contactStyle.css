@@ -76,10 +76,17 @@ h2.custom-heading{
 /*Individual form group styling*/
 .contact-form .form-group {
     margin-bottom: 15px;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 15px;
+    font-weight: lighter;
+
 }
 /*Button styling in the contact form*/
 .contact-form button{
     margin-top: 10px;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 15px;
+    font-weight: lighter;
 }
 /*Hover effect for button*/
 .contact-form button:hover{
@@ -112,7 +119,7 @@ h3.custom-heading{
 }
 /*hover effect for links inside social links*/
 .social-links .nav-item1 a:hover{
-    color: #8860d0;
+    color: rgb(172, 180, 9);
 }
 /*Footer styling*/
 footer{

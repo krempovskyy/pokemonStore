@@ -45,6 +45,10 @@ header .logo img{
     max-width: 200px;
 }
 
+.nav{
+    margin-left: 50px;
+}
+
 main{
     flex: 1;
     font-family: 'Luckiest Guy', cursive;
@@ -57,6 +61,7 @@ h2.custom-heading{
     font-family: 'Luckiest Guy', cursive;
     font-size: 25px;
     font-weight: normal;
+    margin-left: 30px;
 }
 
 
